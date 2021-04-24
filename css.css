@@ -1,0 +1,111 @@
+@font-face {
+	font-family: "dogica";
+	src: url("dogica.ttf");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: dogica;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+}
+
+#game {
+	background: linear-gradient(to right top, #000082, #0000B0, #0000D8, #2F2FFF);
+	height: 100vmin;
+	width: 100vmin;
+	position: absolute;
+	overflow: hidden;
+}
+
+#kapalSelam {
+	width: 10vmin;
+	height: 25vmin;
+	position: absolute;
+	top: 5vmin;
+}
+
+#controller {
+	width: 100vmin;
+	height: 100vmin;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.batu {
+	height: 5vmin;
+	width: 5vmin;
+	background-color: #000;
+	border-radius: 100%;
+	border-top: 2.5vmin solid #fff;
+	border-right: 2.5vmin solid #fff;
+	border-bottom: 2.5vmin solid #000;
+	border-left: 2.5vmin solid #000;
+	position: absolute;
+	animation-name: kelip-kelip;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+#pesan {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #5365CD;
+	color: #F3F3F3;
+	line-height: 20px;
+}
+
+#tombolMulai {
+	margin-top: 50px;
+	max-width: 300px;
+	line-height: 50px;
+	border-radius: 25px;
+	background: linear-gradient(to right, #CDFFCD, #5AFF5A);
+	color: #000;
+	box-shadow: 0 5px 10px rgba(255,255,255,0.5);
+	cursor: pointer;
+}
+
+#tombolMulai:active, #tombolMulai:hover {
+	background: linear-gradient(to right, #5AFF5A, #CDFFCD);
+}
+
+.pesan {
+	margin-top: 50px;
+}
+
+#kalah {
+	color: red;
+	background-color: #eee;
+	line-height: 20px;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+	width: 300px;
+	margin-bottom: 50px;
+	display: none;
+}
+
+#diamond {
+	width: 10vmin;
+	position: absolute;
+}
+
+
+/* animasi */
+@keyframes kelip-kelip {
+	50% {
+		background-color: red;
+	}
+}

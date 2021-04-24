@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dDiamond</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="js.js"></script>
+</head>
+<body>
+	<div id="game">
+		<img id="kapalSelam" src="img/kapal selam.gif">
+		<input type="range" id="controller" oninput="gerak()" min="0" max="90">
+		<div id="batu1" class="batu"></div>
+		<div id="batu2" class="batu"></div>
+		<div id="batu3" class="batu"></div>
+		<img id="diamond" src="img/diamond.png">
+		<div id="skorInGame" style="color: #fff"></div>
+	</div>
+	<div id="pesan">
+		<div class="pesan">
+			<center>
+				<div id="kalah">Uh oh, Kamu kecelakan :(</div>
+				<table id="skor">	
+					<tr>
+						<td>Skor tertinggi</td>
+						<td id="skorTertinggi">: 0</td>
+					</tr>
+					<tr>
+						<td>Skor terakhir</td>
+						<td id="skorTerakhir">: 0</td>
+					</tr>
+				</table>
+				<div id="tombolMulai" onclick="mulai()">MULAI</div>
+			</center>
+		</div>
+	</div>
+</body>
+</html>
