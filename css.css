@@ -102,6 +102,12 @@ body {
 	position: absolute;
 }
 
+#wm {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
 
 /* animasi */
 @keyframes kelip-kelip {
